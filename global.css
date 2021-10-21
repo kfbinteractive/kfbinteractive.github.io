@@ -19,8 +19,6 @@ body, html {
     transform: translate(-50%,-50%);
 }
 
-#browsersensor {display: none;}
-
 @media only screen and (max-width: 800px) {
     .browsersensor {
       display: none;
@@ -33,4 +31,26 @@ body, html {
       display: none;
     }
     .toosmall {display: block;}
+  }
+
+  #loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: url(Images/Anianiau/Anianiau_LSB.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    transition: 1s;
+    animation-name: scalein;
+    animation-duration: 10s;
+    animation-play-state: paused;
+  }
+
+  @keyframes scalein {
+    0% {width: 0px; height: 0px; border-radius: 100%;}
+    100% {width: 100%; height: 100vh; border-radius: 0;}
   }
