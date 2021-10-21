@@ -1,0 +1,133 @@
+.background {
+    background-size: 1500px;
+    background-image: url(Images/Anianiau/Anianiau_LSB.jpg);
+    height: 100vh;
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    text-align: center;
+}
+
+.heading {font-size: 35px; font-weight: 700;}
+
+.subheading {font-size: 25px; font-weight: 500;}
+
+.right {right: 10px;}
+
+.left {left: 10px;}
+
+.cards {
+    height: 640px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.card {
+    height: 120px;
+    width: 120px;
+    background: black;
+    margin: 20px auto;
+    border-radius: 100%;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 160px;
+    width: 160px;
+    border: 1.5px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cardbg {
+    height: 122px;
+    width: 122px;
+    background: black;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition-duration: 0.5s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cardtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.bg01 {
+    background-image: url(Images/Akekee/AKEK_banding.JPG);
+    background-size: 390px;
+    background-position: -90px -60px;
+}
+
+.bg02 {
+    background-image: url(Images/Akikiki/JMH_2017_AKIK023.JPG);
+    background-size: 300px;
+    background-position: -70px -40px;  
+}
+
+.bg03 {
+    background-image: url(Images/Puaiohi/Puaiohi_LAB.jpg);
+    background-size: cover;
+}
+
+.bg04 {
+    background-image: url(Images/Kauai_Amakihi/Kauai_Amakihi_LAB.jpg);
+    background-size: 300px; 
+}
+
+.bg05 {
+    background-image: url(Images/Apapane/Apapane_LSB.jpg);
+    background-size: 1200px; 
+}
+
+.bg06 {
+    background-image: url(Images/Anianiau/JMH_ANIA_2017_001.JPG);
+    background-size: 800px;
+}
+
+.bg07 {
+    background-image: url(Images/Kauai_Elepaio/Kauai_Elepaio_LSB.jpg);
+    background-size: 300px; 
+}
+
+.bg08 {
+    background-image: url(Images/Iiwi/Iiwi_LAB010.jpg);
+    background-size: 252px; 
+}
+
+.card:hover .cardbg {
+    transition: 0.5s;
+    height: 162px;
+    width: 162px;
+    background-position: center;
+}
