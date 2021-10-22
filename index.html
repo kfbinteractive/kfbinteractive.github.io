@@ -1,8 +1,6 @@
     <html lang="en">
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <script src="all.js"></script>
-          <link rel="stylesheet" href="global.css" rel="preload">
           <title>KFB Interactive</title>
           <meta name="description" content="NEEDS INPUT">
           <meta name="author" content="Simon & KFBRP">
@@ -15,16 +13,31 @@
           <link rel="icon" href="NEEEDS INPUT" type="image/svg+xml">
           <link rel="apple-touch-icon" href="NEEEDS INPUT">
           <link rel="stylesheet" href="index.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="all.js"></script>
+          <link rel="stylesheet" href="global.css">
           
-          
+          <script>
+            function scale() {
+              document.getElementById("newpage").style.opacity = "1";
+            }
+            </script>
         </head>     
         <body>
-            <div class="toosmall lato"><span>Please view this on a larger browser.</span></div>
           <div id="loader" class="loader">
           </div>
-          <div class="browsersensor"></div>
-          <div class="background"></div>
+          
+    <div class="browsersensor" id="browsersensor">   
+      <div class="background">
+        <video class="backgroundvideo" autoplay loop>
+         <source src="Videos/Anianiau_2_c_Jim_Denny_Trim.mp4" type="video/mp4">
+         
+        Your browser does not support the video tag.
+        </video>
+            </div>
           <main>
+            <div id="newpage"></div>
+            
           <div class="wrapper">
     <span class="montserrat heading">Come and meet our birds!</span>
               <br>
@@ -33,44 +46,46 @@
           </div>
 <div class="left cards">
      <div class="center">
-     <div class="card">
+     <div class="card" onclick="scale()">
      <div class="cardbg bg01"></div>
     <span class="cardtext lato">'Akeke'e</span>
      </div>
-     <div class="card">
+     <div class="card" onclick="scale()">
     <div class="cardbg bg02"></div>
     <span class="cardtext lato">'Akikiki</span>
     </div>
-    <div class="card">
+    <div class="card" onclick="scale()">
     <div class="cardbg bg03"></div>
     <span class="cardtext lato">'Puaiohi</span>
     </div>
-    <div class="card">
+    <div class="card" onclick="scale()">
     <div class="cardbg bg04"></div>
     <span class="cardtext lato">Kaua'i 'Amakihi</span>
     </div>
     </div>
  </div>
  <div class="right cards">     <div class="center">
-    <div class="card">
+    <div class="card" onclick="scale()">
     <div class="cardbg bg05"></div>
     <span class="cardtext lato">'Apapane</span>
     </div>
-     <div class="card">
+     <div class="card" onclick="scale()">
     <div class="cardbg bg06"></div>
     <span class="cardtext lato">'Anianiau</span>
   </div>
-<div class="card">
+<div class="card" onclick="scale()">
     <div class="cardbg bg07"></div>
     <span class="cardtext lato">Kauai 'Elepaio</span>
 </div>
-<div class="card">
+<div class="card" onclick="scale()">
     <div class="cardbg bg08"></div>
     <span class="cardtext lato">'I'iwi</span>
 </div>
             </div>
           </div>
         </main>
+
+        <div class="toosmall lato"><span>Please view this on a larger browser.</span></div>
         </div>
         </body>
         </html>

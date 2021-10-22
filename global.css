@@ -10,7 +10,7 @@ body, html {
     color: white;
 }
 
-.toosmall {
+.toosmall span{
     color: white;
     display: none;
     position: absolute;
@@ -19,21 +19,39 @@ body, html {
     transform: translate(-50%,-50%);
 }
 
+.toosmall {
+background: black;
+height: 100vh;
+width: 100%;
+display: none;
+position: absolute;
+}
+
 @media only screen and (max-width: 800px) {
-    .browsersensor {
+    main {
       display: none;
     }
     .toosmall {display: block;}
-  }
 
-  @media only screen and (max-height: 500px) {
-    .browsersensor {
+  .background {
+    z-index: -2;
+  }
+  .toosmall span {display: block;}
+}
+  @media only screen and (max-height: 600px) {
+    main {
       display: none;
     }
+
+    .background {
+      z-index: -2;
+    }
     .toosmall {display: block;}
+
+    .toosmall span {display: block;}
   }
 
-  #loader {
+  .loader {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,13 +62,16 @@ body, html {
     width: 100%;
     height: 100vh;
     border-radius: 0;
-    transition: 1s;
+    transition-duration: 1s;
     animation-name: scalein;
-    animation-duration: 10s;
+    animation-duration: 1.6s;
     animation-play-state: paused;
+    opacity: 0.3;
   }
 
+  .browsersensor {opacity: 0; display: none; transition-duration: 1s;}
+
   @keyframes scalein {
-    0% {width: 0px; height: 0px; border-radius: 100%;}
+    0% {width: 0px; height: 0px; border-radius: 100px;}
     100% {width: 100%; height: 100vh; border-radius: 0;}
   }
