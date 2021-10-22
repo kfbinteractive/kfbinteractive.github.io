@@ -5,14 +5,13 @@ window.onload = function(){
         document.getElementById("loader").style.opacity = "0";     
     document.getElementById("browsersensor").style.display = "block";
     setTimeout(function(){
-        document.getElementById("loader").style.animationPlayState = "running";    
+        document.getElementById("loader").style.animationPlayState = "runnig";    
         document.getElementById("loader").style.opacity = "0.3";       
     },100); 
      
     
     setTimeout(function(){
         document.getElementById("loader").style.opacity = "0";
-        document.getElementById("browsersensor").style.opacity = "1";
     },2300); 
     
     setTimeout(function(){
@@ -26,8 +25,13 @@ window.onload = function(){
 
     setTimeout(function(){
         document.getElementById("backgroundvideo").style.display = "block";
-        document.getElementById("backgroundvideo").style.opacity = "1";
+        document.getElementById("backgroundvideo").style.opacity = "0.2";
+        document.getElementById("background").style.display = "none";
     },2500); 
+
+    setTimeout(function(){
+        document.getElementById("browsersensor").style.opacity = "1";
+    },3500); 
     
 };
 

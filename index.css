@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100%;
     opacity: 0.3;
+    z-index: 1;
     position: absolute;
 }
 
@@ -15,14 +16,13 @@
     max-width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 996;
     margin: 0;
     top: 0;
     left: 0;
     object-fit: cover;
     display: none;
     transition: 0s;
-    opacity: 0;
+    opacity: 0.3;
 }
 
 .wrapper {
@@ -35,7 +35,7 @@
     transition: 0.5s;
 }
 
-.heading {font-size: 2.5rem; font-weight: 700;}
+.heading {font-size: 2rem; font-weight: 700;}
 
 .subheading {font-size: 1.5rem; font-weight: 500;}
 
@@ -76,7 +76,7 @@
     height: 122px;
     width: 122px;
     background: black;
-    opacity: 0.7;
+    opacity: 0.4;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,6 +154,7 @@
     height: 162px;
     width: 162px;
     background-position: center;
+    opacity: 1;
 }
 
 #newpage {
@@ -167,3 +168,36 @@
     transition-duration: 0.5s;
 }
 
+.dialouge {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: black;
+    z-index: 999;
+    pointer-events: none;
+    animation-name: fadein;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    opacity: 0;
+
+}
+
+.dialouge span {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    animation-name: fadein;
+    animation-duration: 6.5s;
+    animation-delay: 1s;
+    animation-play-state: running;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
