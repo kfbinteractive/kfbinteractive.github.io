@@ -17,7 +17,7 @@ window.onload = function(){
     
     setTimeout(function(){
         document.getElementById("loader").style.display = "none";
-        
+        document.getElementById("backgroundvideo").style.display = "block";
     },2400); 
 };
 
