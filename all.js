@@ -17,7 +17,17 @@ window.onload = function(){
     
     setTimeout(function(){
         document.getElementById("loader").style.display = "none";
-        document.getElementById("backgroundvideo").style.display = "block";
     },2400); 
+
+    setTimeout(function(){
+        document.getElementById("right").style.display = "block";
+        document.getElementById("left").style.display = "block";
+    },2550); 
+
+    setTimeout(function(){
+        document.getElementById("backgroundvideo").style.display = "block";
+        document.getElementById("backgroundvideo").style.opacity = "1";
+    },2500); 
+    
 };
 

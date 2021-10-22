@@ -1,3 +1,4 @@
+.loader {background: url(Images/Anianiau/Anianiau_LSB.jpg);}
 
 .background {
     background-image: url(Images/Anianiau/Anianiau_LSB.jpg);
@@ -20,6 +21,8 @@
     left: 0;
     object-fit: cover;
     display: none;
+    transition: 0s;
+    opacity: 0;
 }
 
 .wrapper {
@@ -32,13 +35,13 @@
     transition: 0.5s;
 }
 
-.heading {font-size: 3rem; font-weight: 700;}
+.heading {font-size: 2.5rem; font-weight: 700;}
 
-.subheading {font-size: 2rem; font-weight: 500;}
+.subheading {font-size: 1.5rem; font-weight: 500;}
 
-.right {right: 10px;}
+.right {right: 10px; display: none;}
 
-.left {left: 10px;}
+.left {left: 10px; display: none;}
 
 .cards {
     height: 640px;
@@ -99,7 +102,10 @@
     transform: translate(-50%,-50%);
     text-align: center;
     pointer-events: none;
+    transition: 0.5s;
 }
+
+.card:hover .cardtext {opacity: 0; transition: 0.5s;}
 
 .bg01 {
     background-image: url(Images/Akekee/AKEK_banding.JPG);
@@ -160,3 +166,4 @@
     pointer-events:none;
     transition-duration: 0.5s;
 }
+
