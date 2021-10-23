@@ -32,4 +32,6 @@ main {
 .pictures {width: 200px; height: 200px;
 background-color: white; border: 3px solid black; position: absolute; border-radius: 100%;
 right: 80px;
+background-size: cover;
+background-position: center;
 }
