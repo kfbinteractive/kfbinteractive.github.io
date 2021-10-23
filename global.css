@@ -89,3 +89,6 @@ position: absolute;
     position: absolute;
     display: none;
   }
+
+  audio {position: absolute; opacity: 0;
+   pointer-events: none;}
