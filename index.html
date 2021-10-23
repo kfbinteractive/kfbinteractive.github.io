@@ -24,22 +24,19 @@
             </script>
         </head>     
         <body>
-          <div id="loader" class="loader">
+          <div id="loader" class="loader lato">Loading...
           </div>
-          
+          <div class="dialouge">
+            <span class="montserrat">Please turn on your audio and close all tabs before viewing.</span>
+            <span class="montserrat delay1">This website is best viewed on Google Chrome, with a device that has more than 8GB of RAM.</span>
+          </div>
     <div class="browsersensor" id="browsersensor">   
       <div class="background" id="background"></div>
         <video class="backgroundvideo" id="backgroundvideo" autoplay loop muted>
          <source src="Videos/Anianiau_2_c_Jim_Denny_Trim.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
-        <audio autoplay loop>
-          <source src="Audio/zapsplat_nature_forest_birds_wind_trees_leaves_falling_qld_australia_56740.mp3" type="audio/mpeg">
-          Your browser does not support the audio tag.
-        </audio>
-        <div class="dialouge">
-          <span class="montserrat">Please turn on your audio and close all tabs before viewing.</span>
-        </div>
+        <iframe src="Audio/zapsplat_nature_forest_birds_wind_trees_leaves_falling_qld_australia_56740.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
           <main>
             <div id="newpage"></div>
             
@@ -51,10 +48,12 @@
           </div>
 <div class="left cards" id="left">
      <div class="center">
+     <a href="javascript:setTimeout(()=>{window.location = 'akekee.html' },500);">
      <div class="card" onclick="scale()">
      <div class="cardbg bg01" id="bg01"></div>
     <span class="cardtext lato">'Akeke'e</span>
      </div>
+    </a>
      <div class="card" onclick="scale()">
     <div class="cardbg bg02"></div>
     <span class="cardtext lato">'Akikiki</span>

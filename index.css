@@ -180,6 +180,7 @@
     animation-delay: 1s;
     animation-play-state: running;
     opacity: 0;
+    text-align: center;
 
 }
 
@@ -192,8 +193,16 @@
     animation-duration: 6.5s;
     animation-delay: 1s;
     animation-play-state: running;
-    opacity: 0;
+    opacity: 0;text-align: center;
 }
+
+.delay1 {    
+    animation-duration: 6.5s;
+    animation-delay: 6.5s;
+    animation-play-state: running;
+    opacity: 0;
+    animation-name: fadein;
+margin: 60px 0px;text-align: center;}
 
 @keyframes fadein {
     0% {opacity: 0;}

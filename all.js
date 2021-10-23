@@ -27,11 +27,11 @@ window.onload = function(){
         document.getElementById("backgroundvideo").style.display = "block";
         document.getElementById("backgroundvideo").style.opacity = "0.2";
         document.getElementById("background").style.display = "none";
-    },2500); 
+    },4000); 
 
     setTimeout(function(){
         document.getElementById("browsersensor").style.opacity = "1";
-    },3500); 
+    },2700); 
     
 };
 
