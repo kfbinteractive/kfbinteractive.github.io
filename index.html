@@ -9,8 +9,8 @@
           <meta property="og:url" content="NEEDS INPUT">
           <meta property="og:description" content="NEEDS INPUT">
           <meta property="og:image" content="iNEEDS INPUT">
-          <link rel="icon" href="NEEDS INPUT">
-          <link rel="icon" href="NEEEDS INPUT" type="image/svg+xml">
+          <link rel="icon" href="Images/favicon.png">
+          <link rel="icon" href="Images/favicon.png" type="image/png">
           <link rel="apple-touch-icon" href="NEEEDS INPUT">
           <link rel="stylesheet" href="index.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,20 +21,24 @@
             function scale() {
               document.getElementById("newpage").style.opacity = "1";
             }
+
+            function out() {
+              document.getElementById("dialouge-out").style.display = "none";
+              document.getElementById("outbutton").style.display = "none";
+            }
             </script>
         </head>     
         <body>
+
+
           <div id="loader" class="loader lato"><span>Loading...</span></div>
-            <iframe src="/Audio/10-seconds-of-silence.mp3" allow="autoplay" id="audio" style="opacity: 0; position: absolute;"></iframe>
-        <audio
-        autoplay loop controls
-        src="/Audio/zapsplat_nature_forest_birds_wind_trees_leaves_falling_qld_australia_56740.mp3">
-            Your browser does not support the audio element.
-    </audio>
-          <div class="dialouge">
+          <div class="dialouge" id="dialouge-out">
+            <button class="dialouge-out lato" onclick="out()" id="outbutton">Skip</button>
             <span class="montserrat">Please turn on your audio and close all tabs before viewing.</span>
             <div class="delay1 montserrat">This website is best viewed on Google Chrome, with a device that has more than 8GB of RAM.</div>
           </div>
+
+
     <div class="browsersensor" id="browsersensor">   
       <div class="background" id="background"></div>
         <video class="backgroundvideo" id="backgroundvideo" autoplay loop muted>
@@ -42,6 +46,7 @@
         Your browser does not support the video tag.
         </video>
           <main>
+
             <div id="newpage"></div>
             
           <div class="wrapper">
@@ -58,42 +63,61 @@
     <span class="cardtext lato">'Akeke'e</span>
      </div>
     </a>
+    <a href="akikiki.html">
      <div class="card" onclick="scale()">
     <div class="cardbg bg02"></div>
     <span class="cardtext lato">'Akikiki</span>
     </div>
+    </a>
+    <a href="puaiohi.html">
     <div class="card" onclick="scale()">
     <div class="cardbg bg03"></div>
     <span class="cardtext lato">'Puaiohi</span>
     </div>
+  </a>
+  <a href="kauai-amakihi.html">
     <div class="card" onclick="scale()">
     <div class="cardbg bg04"></div>
     <span class="cardtext lato">Kaua'i 'Amakihi</span>
     </div>
+  </a>
     </div>
  </div>
+
  <div class="right cards" id="right">     <div class="center">
+<a href="apapane.html">
     <div class="card" onclick="scale()">
     <div class="cardbg bg05"></div>
     <span class="cardtext lato">'Apapane</span>
     </div>
+  </a>
+  <a href="anianiau.html">
      <div class="card" onclick="scale()">
     <div class="cardbg bg06"></div>
     <span class="cardtext lato">'Anianiau</span>
   </div>
+</a>
+<a href="kauai-elepaio.html">
 <div class="card" onclick="scale()">
     <div class="cardbg bg07"></div>
     <span class="cardtext lato">Kauai 'Elepaio</span>
 </div>
+</a>
+<a href="iiwi.html">
 <div class="card" onclick="scale()">
     <div class="cardbg bg08"></div>
     <span class="cardtext lato">'I'iwi</span>
 </div>
+</a>
             </div>
           </div>
         </main>
 
+
+
         <div class="toosmall lato"><span>Please view this on a larger browser.</span></div>
-        </div>
+        
+      
+      </div>
         </body>
         </html>

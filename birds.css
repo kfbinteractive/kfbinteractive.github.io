@@ -1,37 +1,202 @@
-.background {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    background-image: url(Images/Akikiki/JMH_2017_AKIK_sittingonnest004.jpg);
-    background-size: cover;
-    opacity: 0.3;
-    z-index: -1;
+body, html {
+    overflow: hidden;
 }
 
-a {
-    color: green;
-    text-decoration: underline;
-    cursor: pointer;
+.background {
+
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    z-index: 900;
+    text-align: center;
     transition: 0.5s;
 }
 
-a:hover {background: green; transition: 0.5s; color: white;}
+.heading {font-size: 2rem; font-weight: 700;}
 
-main {
+.subheading {font-size: 1.5rem; font-weight: 500;}
+
+.right {right: 10px; display: none;}
+
+.left {left: 10px; display: none;}
+
+.cards {
+    height: 640px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    transition: 0.5s;
+    z-index: 900;
+}
+
+.card {
+    height: 120px;
+    width: 120px;
+    background: black;
+    margin: 10px auto;
+    border-radius: 100%;
+    border: 1px solid white;
+    overflow: hidden;
     position: relative;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+    transition: 0.5s;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.card:hover {
+    height: 160px;
+    width: 160px;
+    border: 1.5px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+}
+
+.cardbig {
+    height: 5000px;
+    width: 5000px;
+    background: rgba(255, 255, 255, 0.9);
+    
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    border-radius: 10px;
+    opacity: 0;
+    color: black;
+    transition: 0.5s;
+    text-align: center;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     z-index: 999;
 }
 
-.info {padding: 50px;}
+.card:focus .cardbig {
+opacity: 1;
+z-index: 2;
+position: absolute;
+left: 60%;
+transform: translate(-50%,0);
+border-radius: 10px;
+border: 0px solid transparent;
+transition: 1s;
+width: 1000px;
+height: 400px;
+}
 
-.name {font-size: 50px; font-weight: 700;}
-.science-name {color: rgb(185, 185, 185); font-style: italic;}
+.card:focus {
+    background:transparent;
+    overflow: hidden;
+    height: 399px;
+    border: 1px solid transparent;
+    width: 500px;
+    border-radius: 10px;
+    cursor: auto;
+}
 
-.desc {font-size: 18px; position: absolute; width: 800px;}
+.cardbg {
+    height: 122px;
+    width: 122px;
+    background: black;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition-duration: 0.5s;
+    pointer-events: none;
+}
 
-.pictures {width: 200px; height: 200px;
-background-color: white; border: 3px solid black; position: absolute; border-radius: 100%;
-right: 80px;
-background-size: cover;
-background-position: center;
+.cardbg1 {
+    opacity: 0.3;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    left: 34%;
+    z-index: -1;
+}
+
+.card:focus .cardbg {
+    height: 400px;
+    width: 400px;
+    display: none;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cardtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.cardtitle {
+    top: 20px;
+    position: relative;
+    left: 1%;
+    font-weight: 700;
+}
+
+.carddesc {
+    width: 300px;
+    left: 37%;
+    margin: 30px 0;
+    position: absolute;
+    font-weight: 400;
+}
+
+.card:focus .cardtext {opacity: 0; display: none;}
+
+
+.card:hover .cardtext {opacity: 0; transition: 0.5s;}
+
+.card:hover .cardbg {
+    transition: 0.5s;
+    height: 162px;
+    width: 162px;
+    background-position: center;
+    opacity: 1;
+}
+
+.listen {
+   opacity: 0;
+}
+
+.audio {
+    position: relative; 
+    right: 80px;
+
+} 
+
+.audiotext {
+    position: absolute;top: 50%;left:50%;transform:translate(-50%,-50%);width:200px;
+    pointer-events: none;
 }

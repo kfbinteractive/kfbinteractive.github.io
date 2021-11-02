@@ -62,6 +62,7 @@
     overflow: hidden;
     position: relative;
     transition: 0.5s;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .card:hover {
@@ -70,6 +71,8 @@
     border: 1.5px solid white;
     transition: 0.5s;
     cursor: pointer;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
 }
 
 .cardbg {
@@ -206,6 +209,20 @@
     position: absolute;
     transform: translate(-50%,-50%);
     animation-name: fadein;text-align: center;}
+
+.dialouge-out {
+    background: transparent;
+    border: 0px solid transparent;
+    color: white;
+    margin: 10px 0px;
+    pointer-events: all;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-play-state: running;
+    animation-name: fadein;
+    opacity: 0;
+cursor: pointer;
+}
 
 @keyframes fadein {
     0% {opacity: 0;}

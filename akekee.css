@@ -1,3 +1,17 @@
-.pictures {
+.background {
     background-image: url(Images/Akekee/AKEK_banding.jpg);
+}
+
+.bg01 {
+    background-image: url(Images/Akekee/AKEK_banding.JPG);
+    background-size: 390px;
+    background-position: -90px -60px;
+}
+
+.bg02 {
+    background-image: url(Images/Akekee/Akekee_LAB.jpg);
+}
+
+.cardbg1 {
+    background-image: url(Images/Akekee/AKEKEE_MTeruya.jpg);
 }

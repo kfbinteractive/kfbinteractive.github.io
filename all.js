@@ -27,7 +27,7 @@ window.onload = function(){
         document.getElementById("backgroundvideo").style.display = "block";
         document.getElementById("backgroundvideo").style.opacity = "0.5";
         document.getElementById("background").style.display = "none";
-    },9000); 
+    },3000); 
 
     setTimeout(function(){
         document.getElementById("browsersensor").style.opacity = "1";
