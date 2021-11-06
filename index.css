@@ -1,3 +1,8 @@
+body, html {
+    overflow: hidden;
+    overflow:-moz-hidden-unscrollable;
+}
+
 .loader {background: url(Images/Anianiau/Anianiau_LSB.jpg);}
 
 .background {
@@ -6,23 +11,9 @@
     height: 100vh;
     width: 100%;
     opacity: 0.5;
-    z-index: 1;
-    position: absolute;
-}
-
-.backgroundvideo {
-    width: 100vw;
-    min-width: 100vw;
-    max-width: 100vw;
-    height: 100vh;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
-    object-fit: cover;
     display: none;
-    transition: 0s;
-    opacity: 0.3;
+    position: absolute;
+    transition: 0.5s;
 }
 
 .wrapper {
@@ -55,7 +46,9 @@
 .card {
     height: 120px;
     width: 120px;
-    background: black;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     margin: 20px auto;
     border-radius: 100%;
     border: 1px solid white;
@@ -79,16 +72,14 @@
     height: 122px;
     width: 122px;
     background: black;
-    opacity: 0.4;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    opacity: 0.5;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition-duration: 0.5s;
     pointer-events: none;
+    object-fit: cover;
 }
 
 .center {
@@ -110,55 +101,47 @@
 
 .card:hover .cardtext {opacity: 0; transition: 0.5s;}
 
-.bg01 {
-    background-image: url(Images/Akekee/AKEK_banding.JPG);
-    background-size: 390px;
-    background-position: -90px -60px;
+.card:hover .cardbg {
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
+    opacity: 1;
 }
 
-.bg02 {
-    background-image: url(Images/Akikiki/JMH_2017_AKIK023.JPG);
-    background-size: 300px;
-    background-position: -70px -40px;  
-}
-
-.bg03 {
-    background-image: url(Images/Puaiohi/Puaiohi_LAB.jpg);
-    background-size: cover;
-}
-
-.bg04 {
-    background-image: url(Images/Kauai_Amakihi/Kauai_Amakihi_LAB.jpg);
-    background-size: 300px; 
+.card:hover .bg03 {
+    width: 200px;
+    height: 200px;
+    
 }
 
 .bg05 {
-    background-image: url(Images/Apapane/Apapane_LSB.jpg);
-    background-size: 1200px; 
+    width: 400px;
+    height: 400px;
 }
+
+.card:hover .bg05 {width: 800px; height: 800px;}
+
 
 .bg06 {
-    background-image: url(Images/Anianiau/JMH_ANIA_2017_001.JPG);
-    background-size: 800px;
+    width: 300px;
+    height: 300px;
 }
+
+.card:hover .bg06 {width: 500px; height: 500px;}
 
 .bg07 {
-    background-image: url(Images/Kauai_Elepaio/Kauai_Elepaio_LSB.jpg);
-    background-size: 300px; 
+    width: 150px;
+    height:150px;
 }
+
+.card:hover .bg07 {width: 350px; height: 350px;}
 
 .bg08 {
-    background-image: url(Images/Iiwi/Iiwi_LAB010.jpg);
-    background-size: 252px; 
+    width: 120px;
+    height:120px;
 }
 
-.card:hover .cardbg {
-    transition: 0.5s;
-    height: 162px;
-    width: 162px;
-    background-position: center;
-    opacity: 1;
-}
+.card:hover .bg08 {width: 230px; height: 230px;}
 
 #newpage {
     height: 100vh;
@@ -216,8 +199,8 @@
     color: white;
     margin: 10px 0px;
     pointer-events: all;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: 7s;
+    animation-delay: 3s;
     animation-play-state: running;
     animation-name: fadein;
     opacity: 0;

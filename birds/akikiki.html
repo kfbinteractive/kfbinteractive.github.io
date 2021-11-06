@@ -12,11 +12,12 @@
           <link rel="icon" href="Images/favicon.png">
           <link rel="icon" href="Images/favicon.png" type="image/png">
           <link rel="apple-touch-icon" href="NEEEDS INPUT">
-          <link rel="stylesheet" href="global.css">
-          <link rel="stylesheet" href="birds.css">
-          <link rel="stylesheet" href="akekee.css">
+          <link rel="stylesheet" href="global.css" async>
+          <link rel="stylesheet" href="birds.css"defer>
+          <link rel="stylesheet" href="akekee.css" defer>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="all.js"></script>
+          <script src="birds.js"></script>
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5443028626546281"
      crossorigin="anonymous"></script>
         </head>     
@@ -28,6 +29,7 @@
     
             
         <div class="background" id="background"></div>
+        
         <div class="wrapper">
   <span class="montserrat heading">Meet the Akekee</span>
             <br>
@@ -41,8 +43,8 @@
 <div class="left cards" id="left">
 
    <div class="center">
-
-    <button class="card">
+<div onclick="cardScale()" id="cardchange1">
+    <div class="card cardchange1">
       <div class="cardbig">
         <div class="cardbg1"></div>
         <span class="montserrat cardtitle">Information</span>
@@ -50,9 +52,10 @@
         <span class="lato carddesc">Fossil records suggest that this greenish-yellow honeycreeper with a black mask has inhabited only the island of Kaua’i.  This species has a specialized bill – with offset tips similar to those of mainland crossbill species – that allows it to pry open buds of ‘Ōhi’a leaves and flowers to search for invertebrates.  The species was federally listed as endangered in 2010 due to low numbers (3,111 ± 591 birds) and a declining population trend;  data from 2012 suggest there are 1000 birds (Paxton et al., 2016)</span></div>
    <div class="cardbg bg01" id="bg01"></div>
   <span class="cardtext lato"></span>
-  </button>
-  
-  <button class="card">
+      </div>
+    </div>
+  <div onclick="cardScale1()" id="cardchange2">
+  <div class="card">
     <div class="cardbig">
       <div class="cardbg1"></div>
       <span class="montserrat cardtitle">Information</span>
@@ -60,7 +63,8 @@
       <span class="lato carddesc">Fossil records suggest that this greenish-yellow honeycreeper with a black mask has inhabited only the island of Kaua’i.  This species has a specialized bill – with offset tips similar to those of mainland crossbill species – that allows it to pry open buds of ‘Ōhi’a leaves and flowers to search for invertebrates.  The species was federally listed as endangered in 2010 due to low numbers (3,111 ± 591 birds) and a declining population trend;  data from 2012 suggest there are 1000 birds (Paxton et al., 2016)</span></div>
   <div class="cardbg bg02"></div>
   <span class="cardtext lato"></span>
-   </button>
+    </div>
+    </div>
   </div>
 </div>
 
