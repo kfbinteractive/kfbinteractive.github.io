@@ -1,0 +1,141 @@
+body, html {
+    overflow: hidden;
+}
+
+.background {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    transition: 0.5s;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main span {
+    font-size: 800%;
+    font-weight: 800;transition: 0.5s;
+    opacity: 0.7;
+    animation-name: letsgo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes letsgo {
+    0% {margin: 0;}
+    50% {opacity: 0.5;}
+    100% {margin: 0;}
+}
+
+@media only screen and (max-width: 1660px) {
+    .main span {font-size: 400%; transition: 0.5s;}
+}
+
+.cursor {
+    position: absolute;
+    
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    color: black;
+    margin: -25px;
+    box-shadow: 0px 0px 100px white;
+    cursor: pointer;
+opacity: 0.3;
+transition: 0.5s;
+text-overflow: clip;
+overflow: hidden;
+backdrop-filter: blur(100px);
+-webkit-backdrop-filter: blur(100px);
+
+}
+
+.card:hover {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 100%;
+    color: black;
+    margin: -50px;
+    box-shadow: 0px 0px 100px white;
+    cursor: pointer;
+opacity: 0.3;
+transition: 0.5s;
+text-overflow: clip;
+overflow: hidden;
+backdrop-filter: blur(100px);
+-webkit-backdrop-filter: blur(100px);
+}
+
+.text:hover .card {
+    transition-delay: 1s;
+    opacity: 0.9;
+    transition: 1s;
+    overflow: hidden;
+
+}
+
+.card {
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+}
+
+.card span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    animation: infinitetext 10s infinite linear;
+    transition: 0.5s;
+    pointer-events: none;
+    
+    
+}
+
+
+
+.card:hover span {
+   opacity: 1;
+transition: 0.5s;
+}
+
+.card:active {
+    height: 300px;
+    width: 300px;
+    margin:-150px;
+
+}
+
+.span {opacity: 0;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:300px;text-align:center;user-select: none;-moz-user-select: none;-webkit-user-select: none;transition:0.5s;}
+
+.card:active .span {
+    animation-play-state: paused;
+    font-size: 50px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.card:active span {opacity: 0;}
+
+@keyframes infinitetext {
+    0% {transform: translate(-300px, -50%);}
+    50% {transform: translate(-200px, -50%);}
+    100% {transform: translate(-300px, -50%);}
+}

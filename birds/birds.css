@@ -1,45 +1,16 @@
-body, html {
-    overflow: hidden;
-}
-
-.background {
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.5;
-    z-index: 1;
-    position: absolute;
-}
-
-.wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    z-index: 900;
-    text-align: center;
-    transition: 0.5s;
-}
 
 .heading {font-size: 2rem; font-weight: 700;}
 
 .subheading {font-size: 1.5rem; font-weight: 500;}
 
-.right {right: 10px; display: block;}
-
-.left {left: 10px; display: block;}
-
-.cards {
-    height: 80%;
-    width: 200px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    transition: 0.5s;
-    z-index: 900;
+main {
+    position: relative;
+    z-index: 999;
 }
 
+.loader {
+  scroll-behavior: smooth;
+}
 
 .center {
     position: absolute;
@@ -47,25 +18,25 @@ body, html {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-    
 
-.listen {
-   opacity: 0;
+.birdtitle {
+    font-size: 70px;
+    font-weight: 900;
+    padding: 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    z-index: 999;
+    margin: -200px 0;
 }
 
-.audio {
-    position: relative; 
-    right: 80px;
-transition: 0.5s;
-} 
-
-.audiotext {
-    position: absolute;top: 50%;left:50%;transform:translate(-50%,-50%);width:200px;
-    pointer-events: none;
+.sn {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    font-size: 50px;
 }
-
-
-
 
 @media only screen and (max-height: 650px) {
     main {
@@ -80,8 +51,107 @@ transition: 0.5s;
     .toosmall span {display: block;}
   }
 
-  @media only screen and (max-width: 1100px) {
-    .audio {opacity: 0; transition: 0.5s; transform: translate(300px,0);}
-    .wrapper {left: 74%;}
+
+.cardwrapper {
+  height: 1000px;
+  position: sticky;
+  margin: 200px 0;
 }
 
+.card {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 200px white;
+  transition: all 0.5s;
+}
+
+.card:hover {
+ cursor: pointer;
+ width: 200px;
+ height: 200px;
+ margin: -25px;
+}
+
+
+
+.c1 {
+  position: absolute;
+  right: 80px;
+  top: 80px;
+
+}
+
+
+.c2 {
+  position: absolute;
+  left: 80px;
+  top: 420px;
+}
+
+.c3 {
+  position: absolute;
+  right: 80px;
+  top: 800px;
+}
+
+.card-open {
+  display: none;
+  overflow: hidden;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v90/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcel5euIg.woff2) format('woff2');
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px;
+  transition: all 0.5s;
+  border-radius: 100%;
+}
+
+.material-icons-outlined:hover {
+  background: rgba(153, 153, 153, 0.3);
+  border-radius: 100%;
+}
