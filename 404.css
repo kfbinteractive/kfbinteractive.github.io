@@ -22,7 +22,8 @@ body, html {
 
 .main span {
     font-size: 800%;
-    font-weight: 800;transition: 0.5s;
+    font-weight: 800;
+    transition: 0.5s;
     opacity: 0.7;
     animation-name: letsgo;
     animation-duration: 5s;

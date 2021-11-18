@@ -1,3 +1,11 @@
+.background {
+  background-position: center;
+  background-size: cover;
+  transform: translate(0,-300px);
+  height:1700px;
+  width: 100%;
+  position: absolute;
+}
 
 .heading {font-size: 2rem; font-weight: 700;}
 
@@ -10,6 +18,7 @@ main {
 
 .loader {
   scroll-behavior: smooth;
+  overflow: none;
 }
 
 .center {
@@ -20,7 +29,7 @@ main {
 }
 
 .birdtitle {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     padding: 20px 50px;
     position: absolute;
@@ -38,19 +47,6 @@ main {
     font-size: 50px;
 }
 
-@media only screen and (max-height: 650px) {
-    main {
-      display: none;
-    }
-
-    .background {
-      z-index: -2;
-    }
-    .toosmall {display: block;}
-
-    .toosmall span {display: block;}
-  }
-
 
 .cardwrapper {
   height: 1000px;
@@ -64,7 +60,7 @@ main {
   overflow: hidden;
   border-radius: 100%;
   background: rgb(255, 255, 255);
-  box-shadow: 0px 0px 200px white;
+  box-shadow: 0px 0px 200px rgb(165, 165, 165);
   transition: all 0.5s;
 }
 
@@ -73,6 +69,7 @@ main {
  width: 200px;
  height: 200px;
  margin: -25px;
+
 }
 
 
@@ -81,7 +78,6 @@ main {
   position: absolute;
   right: 80px;
   top: 80px;
-
 }
 
 
@@ -100,13 +96,23 @@ main {
 .card-open {
   display: none;
   overflow: hidden;
+  overflow-y: scroll;
   color: black;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  height: 100%;
-  width: 100%;
+  right: 0px;
+  transform: translate(0,-50%);
+  height: 90%;
+  width:450px;
+}
+
+.co2 {
+  direction:rtl; 
+  left: 0;
+}
+
+.co2 div {
+  direction: ltr;
 }
 
 
@@ -149,9 +155,44 @@ main {
   margin: 10px;
   transition: all 0.5s;
   border-radius: 100%;
+  z-index: 999;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+ animation-name: closein;
+ animation-duration: 2s;
+ animation-play-state: paused;
 }
 
-.material-icons-outlined:hover {
-  background: rgba(153, 153, 153, 0.3);
-  border-radius: 100%;
+.cc1 {
+  position: absolute;
+  right: 450px;
+  top: 50px;
+  
+}
+
+.cc2 {
+  position: absolute;
+  left: 450px;
+  top: 390px;
+  
+}
+
+.cc3 {
+  position: absolute;
+  right: 450px;
+  top: 770px;
+  
+}
+
+
+@keyframes closein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes closeout {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

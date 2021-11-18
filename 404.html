@@ -29,9 +29,9 @@ Your browser does not support the video tag.
 </video>
     <main>
  <div class="lato main">
-     <span>Nothing here except this adorable bird!</span>
+     <span>Cant find what your looking for... Sorry!</span>
  </div>
-    <div class="cursor montserrat">
+    <div class="cursor montserrat"onclick="goBack()">
         <div class="text"><div class="card"><span>Go Back Go Back Go Back Go Back Go Back</span><div class="span">Go Back</div></div>
     </div>
     </div>
@@ -43,6 +43,10 @@ Your browser does not support the video tag.
                  stagger: -0.01
              });
          });       
+
+         function goBack() {
+  window.history.back();
+ }
     </script>
   </main>
 
