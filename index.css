@@ -1,5 +1,6 @@
 body, html {
  overflow: auto;
+ width: 100%;
 }
 
 .loader {background: url(Images/Anianiau/Anianiau_LSB.jpg);}
@@ -29,9 +30,9 @@ body, html {
 
 .subheading {font-size: 1.5rem; font-weight: 500;}
 
-.right {right: 10px; display: none;}
+.right {right: 10px;}
 
-.left {left: 10px; display: none;}
+.left {left: 10px;}
 
 .cards {
     height: 640px;
@@ -155,7 +156,7 @@ body, html {
 
 .dialouge {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     background: black;
     z-index: 999;
@@ -216,14 +217,25 @@ cursor: pointer;
 .ghouls {
     display: block;
     position: absolute;
+    opacity: 1;
     top: 100%;
     height: 100vh;
     width: 100%;
+    top: 100vh;
 }
 
 .relative {
-    position: relative;
     height: 100vh;
-    width: 100vw;
-    z-index: 999;
+    width: 100%;
+    display: block;
+}
+
+.back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/Anianiau/Anianiau_MJW.jpg);
+    background-size: 100px;
+    background-position: center;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
 }

@@ -10,10 +10,6 @@ body, html {
     color: #ffffff;
 }
 
-.browsersensor {
-  display: none;
-}
-
 a {text-decoration: none; color: inherit;}
 
 .toosmall span{
@@ -58,37 +54,4 @@ transition: 0.5s;
     .toosmall {display: block;}
 
     .toosmall span {display: block;}
-  }
-
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 999;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
-    transition-duration: 1s;
-    animation-name: scalein;
-    animation-duration: 1.6s;
-    animation-play-state: paused;
-    opacity: 0.3;
-    text-align: center;
-  }
-
-  .loader span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: 0.5s;
-  }
-
-  .browsersensor {opacity: 0; display: none; transition-duration: 1s;}
-
-  @keyframes scalein {
-    0% {width: 0px; height: 0px; border-radius: 100px;}
-    100% {width: 100%; height: 100vh; border-radius: 0;}
   }

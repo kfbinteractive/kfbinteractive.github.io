@@ -69,7 +69,8 @@ main {
     font-style: italic;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 700;
-    font-size: 50px;
+    font-size: 55px;
+    text-transform: lowercase;
 }
 
 
@@ -173,7 +174,7 @@ main {
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
+ 
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
 
@@ -196,6 +197,7 @@ main {
  animation-name: closein;
  animation-duration: 2s;
  animation-play-state: paused;
+ 
 }
 
 .cc1 {
@@ -249,4 +251,9 @@ main {
   margin: 0px 100px;
   width: 300px;
   height: 300px;
+}
+
+@keyframes rotateclose {
+  from{ transform: rotate(-360deg); }
+  to{ transform: rotate(360deg); }
 }
