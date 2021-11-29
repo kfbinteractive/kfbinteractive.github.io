@@ -23,6 +23,10 @@
 
 /*End*/
 
+a {
+  text-decoration: underline;
+}
+
 .background {
   background-position: center;
   background-size: cover;
@@ -240,6 +244,8 @@ main {
   left: 10px;
   padding: 20px;
   position: relative;
+  object-fit: cover;
+  -o-object-fit: cover;
 }
 
 .img-move {

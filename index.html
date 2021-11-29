@@ -24,17 +24,17 @@
             }
 
             function out() {
-              document.getElementById("dialouge-out").style.display = "none";
-              document.getElementById("outbutton").style.display = "none";
-            }
+        document.getElementById("dialouge-out").style.display = "none";
+        document.getElementById("outbutton").style.display = "none";
+      }
             </script>
         </head>     
         <body>
 
 
           <div id="loader" class="loader lato"><span>Loading...</span></div>
-          <div class="dialouge" id="dialouge-out">
-            <button class="dialouge-out lato" onclick="out()" id="outbutton">Skip</button>
+          <div class="dialouge lato" id="dialouge-out">
+            <button class="dialouge-out lato" id="outbutton" onclick="out()">Skip</button>
             <span class="montserrat">Please turn on your audio and close all tabs before viewing.</span>
             <div class="delay1 montserrat">This website is best viewed on Google Chrome, with a device that has more than 8GB of RAM.</div>
           </div>
@@ -55,7 +55,7 @@ Your browser does not support the video tag.
     </video>
           <div id="newpage"></div>
           <div class="wrapper">
-            <a href="/index-ghouls.html"><span class="lato heading back">Birds</span></a>
+            <a href="/ghouls.html" onclick="scale()"><span class="lato heading back">Ghouls</span></a>
             <br>
             <br>
     <span class="montserrat heading">Immerse Yourself in the Interactive Experience</span>
