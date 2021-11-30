@@ -75,6 +75,9 @@ main {
     font-weight: 700;
     font-size: 55px;
     text-transform: lowercase;
+    width: 1000px;
+    height: 50px;
+    position: relative;
 }
 
 
