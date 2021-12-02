@@ -199,8 +199,8 @@ body, html {
     color: white;
     margin: 10px 0px;
     pointer-events: all;
-    animation-duration: 7s;
-    animation-delay: 3s;
+    animation-duration: 13s;
+    animation-delay: 1s;
     animation-play-state: running;
     animation-name: fadein;
     opacity: 0;
@@ -243,3 +243,4 @@ z-index: 100;
     background: white;
     color: black;
 }
+

@@ -40,6 +40,7 @@
 <div class="cardwrapper">
  <span class="material-icons-outlined cc1" onclick="cardclose1()">close</span>
   <div class="card c1" onclick="cardOpen1()">
+    <span class="cardthings lato ct1">Information</span>
     <div class="card-open co1 lato masked-overflow">
       The secretive Puaiohi, also known as the Small Kaua’i Thrush, is one of only two endemic species in the Thrush family that still exist in Hawai’i today.  First recognized in 1891, the Puaiohi is found only on Kaua’i and it is not known to have historically inhabited other islands in the archipelago. This highly endangered species (population ~500 individuals) is set apart from other native forest birds on Kaua’i by its large size, melodious song, and peculiar nesting and foraging biology.
 <br>
@@ -61,6 +62,7 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
   </div>
   <span class="material-icons-outlined cc2" onclick="cardclose2()">close</span>
   <div class="card c2" onclick="cardOpen2()">
+    <span class="cardthings lato ct2">Pictures</span>
     <div class="card-open co2 lato masked-overflow">
       <div class="img-move">
         <img class="image img1" src="/Images/Puaiohi/LAB_PUAI_012.jpg">
@@ -75,12 +77,18 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
   </div>
   <span class="material-icons-outlined cc3" onclick="cardclose3()">close</span>
   <div class="card c3" onclick="cardOpen3()">
+    <span class="cardthings lato ct3">Audio</span>
     <div class="card-open co3 lato ">
       
     </div>
   </div>
   
 <script>
+// var for all of the card things are here because I didnt want to spread them out
+var ct1 = document.querySelector('.ct1');
+var ct2 = document.querySelector('.ct2');
+var ct3 = document.querySelector('.ct3');
+
   var card1 = document.querySelector('.c1');
   var cardopen1 = document.querySelector('.co1');
   var cc1 = document.querySelector('.cc1');
@@ -95,6 +103,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
   cardopen1.style.transitionDelay = "1s";
   cc1.style.display = "block";
   cc1.style.animationPlayState = "running";
+  ct1.style.opacity = "0";
+  ct1.style.userSelect = "none";
   }
 
   var card2 = document.querySelector('.c2');
@@ -111,6 +121,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
   cardopen2.style.transitionDelay = "1s";
   cc2.style.display = "block";
   cc2.style.animationPlayState = "running";
+  ct2.style.opacity = "0";
+  ct2.style.userSelect = "none";
   }
 
   var card3 = document.querySelector('.c3');
@@ -127,6 +139,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
   cardopen3.style.transitionDelay = "1s";
   cc3.style.display = "block";
   cc3.style.animationPlayState = "running";
+  ct3.style.opacity = "0";
+  ct3.style.userSelect = "none";
   }
 
   function cardclose1() {
@@ -141,6 +155,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
    cc1.style.display = "none";
    cc1.style.animationName = "closeout";
    cc1.style.animationPlayState = "running";
+   ct1.style.opacity = "1";
+  ct1.style.userSelect = "auto";
   }
 
   function cardclose2() {
@@ -154,6 +170,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
    cc2.style.display = "none";
    cc2.style.animationName = "closeout";
    cc2.style.animationPlayState = "running";
+   ct2.style.opacity = "1";
+  ct2.style.userSelect = "auto";
   }
 
   function cardclose3() {
@@ -167,6 +185,8 @@ Credit and Links: <a href="https://kauaiforestbirds.org/akekee/">Kauai Forest Bi
    cc3.style.display = "none";
    cc3.style.animationName = "closeout";
    cc3.style.animationPlayState = "running";
+   ct3.style.opacity = "1";
+  ct3.style.userSelect = "auto";
   }
 </script>
 
