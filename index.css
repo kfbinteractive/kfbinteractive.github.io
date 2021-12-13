@@ -234,13 +234,16 @@ z-index: 100;
 
 .back {
     width: 300px;
-    height: 50px;
-    padding: 10px;
+    height: 40px;
+    padding: 8px;
     border-radius: 10px;
     font-size: 14px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background: white;
+    background: rgba(255, 255, 255, 0.4);
     color: black;
+    z-index: 2;
+    position: relative;
+    border: 2px solid black;
 }
 

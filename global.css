@@ -92,3 +92,113 @@ transition: 0.5s;
     0% {width: 0px; height: 0px; border-radius: 100px;}
     100% {width: 100%; height: 100vh; border-radius: 0;}
   }
+
+  nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: 0.8s ease;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    position: fixed;
+    z-index: 100000;
+    margin: 20px;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+
+  @font-face {
+    font-family: 'Material Icons Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v90/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcel5euIg.woff2) format('woff2');
+  }
+  
+  .material-icons-outlined{
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+   
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .material-icons-outlined-1 {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+   
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+
+
+  .material-icons-outlined-1 {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+
+.navigation-open {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  transition: 0.5s ease;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.navigation-open .material-icons-outlined-1 {
+  opacity: 0;
+  transition: 0.2s;
+}

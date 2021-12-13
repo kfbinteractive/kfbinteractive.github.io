@@ -1,0 +1,262 @@
+body, html {
+    overflow: auto;
+    width: 100%;
+   }
+   
+   
+   
+.background {
+       background-size: cover;
+       height: 100vh;
+       width: 100%;
+       opacity: 0.5;
+       position: absolute;
+       transition: 0.5s;
+       object-fit: cover;
+       -o-object-fit: cover;
+   }
+   
+.wrapper {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       width: 400px;
+       text-align: center;
+       transition: 0.5s;
+   }
+   
+   .heading {font-size: 2rem; font-weight: 700;}
+   
+   .subheading {font-size: 1.5rem; font-weight: 500;}
+   
+   .right {right: 10px;}
+   
+   .left {left: 10px;}
+   
+   .cards {
+       height: 640px;
+       width: 200px;
+       position: absolute;
+       top: 50%;
+       transform: translate(0,-50%);
+       transition: 0.5s;
+   }
+   
+   .card {
+       height: 120px;
+       width: 120px;
+       background: rgb(0, 0, 0);
+       backdrop-filter: blur(5px);
+       -webkit-backdrop-filter: blur(5px);
+       margin: 20px auto;
+       border-radius: 100%;
+       border: 1px solid white;
+       overflow: hidden;
+       position: relative;
+       transition: 0.5s;
+       -webkit-mask-image: -webkit-radial-gradient(white, black);
+       animation-name: flash;
+       animation-duration: 1s;
+       animation-iteration-count: infinite;
+       animation-delay: 1s;
+   }
+
+   @keyframes flash {
+       0% {background-color: rgba(161, 85, 85, 0);}
+       49% {background-color: transparent;}
+       50% {background-color: white;}
+       51% {background-color: transparent;}
+       100% {background-color: rgba(255, 255, 255, 0);}
+   }
+   
+   .card:hover {
+       height: 160px;
+       width: 160px;
+       border: 1.5px solid white;
+       transition: 0.5s;
+       cursor: pointer;
+       -webkit-mask-image: -webkit-radial-gradient(white, black);
+       overflow: hidden;
+   }
+   
+   .cardbg {
+       height: 122px;
+       width: 122px;
+       background: black;
+       opacity: 0.5;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       transition-duration: 0.5s;
+       pointer-events: none;
+       object-fit: cover;
+   }
+   
+   .center {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+   }
+   
+   .cardtext {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       text-align: center;
+       pointer-events: none;
+       transition: 0.5s;
+   }
+   
+   .card:hover .cardtext {opacity: 0; transition: 0.5s;}
+   
+   .card:hover .cardbg {
+       transition: 0.5s;
+       height: 250px;
+       width: 250px;
+       opacity: 1;
+   }
+   
+   .card:hover .bg03 {
+       width: 200px;
+       height: 200px;
+       
+   }
+   
+   .bg05 {
+       width: 400px;
+       height: 400px;
+   }
+   
+   .card:hover .bg05 {width: 800px; height: 800px;}
+   
+   
+   .bg06 {
+       width: 300px;
+       height: 300px;
+   }
+   
+   .card:hover .bg06 {width: 500px; height: 500px;}
+   
+   .bg07 {
+       width: 150px;
+       height:150px;
+   }
+   
+   .card:hover .bg07 {width: 350px; height: 350px;}
+   
+   .bg08 {
+       width: 120px;
+       height:120px;
+   }
+   
+   .card:hover .bg08 {width: 230px; height: 230px;}
+   
+   #newpage {
+       height: 100vh;
+       width: 100%;
+       position: absolute;
+       background-color: black;
+       z-index: 997;
+       opacity: 0;
+       pointer-events:none;
+       transition-duration: 0.5s;
+   }
+   
+   .dialouge {
+       height: 100vh;
+       width: 100%;
+       position: absolute;
+       background: black;
+       z-index: 999;
+       pointer-events: none;
+       animation-name: fadein;
+       animation-duration: 14s;
+       animation-delay: 1s;
+       animation-play-state: running;
+       opacity: 0;
+       text-align: center;
+   
+   }
+   
+   .dialouge span {
+       top: 50%;
+       left: 50%;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       animation-name: fadein;
+       animation-duration: 6.5s;
+       animation-delay: 1s;
+       animation-play-state: running;
+       opacity: 0;text-align: center;
+   }
+   
+   .delay1 {    
+       animation-duration: 6.5s;
+       animation-delay: 6.5s;
+       animation-play-state: running;
+       opacity: 0;
+       top: 50%;
+       left: 50%;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       animation-name: fadein;text-align: center;}
+   
+   .dialouge-out {
+       background: transparent;
+       border: 0px solid transparent;
+       color: white;
+       margin: 10px 0px;
+       pointer-events: all;
+       animation-duration: 13s;
+       animation-delay: 1s;
+       animation-play-state: running;
+       animation-name: fadein;
+       opacity: 0;
+   cursor: pointer;
+   position: relative;
+   z-index: 100;
+   }
+   
+   @keyframes fadein {
+       0% {opacity: 0;}
+       25% {opacity: 1;}
+       75% {opacity: 1;}
+       100% {opacity: 0;}
+   }
+   
+   .ghouls {
+       display: block;
+       position: absolute;
+       opacity: 1;
+       top: 100%;
+       height: 100vh;
+       width: 100%;
+       top: 100vh;
+   }
+   
+   .relative {
+       height: 100vh;
+       width: 100%;
+       display: block;
+   }
+   
+   .back {
+       width: 300px;
+       height: 40px;
+       padding: 8px;
+       border-radius: 10px;
+       font-size: 14px;
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+       background: rgba(255, 255, 255, 0.486);
+       color: black;
+       z-index: 2;
+       position: relative;
+       border: 2px solid black;
+   }
+   
+   

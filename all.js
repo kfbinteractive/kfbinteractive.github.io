@@ -35,3 +35,9 @@ window.onload = function(){
     
 };
 
+
+
+function navigation() {
+    var element = document.getElementById("navigation");
+  element.classList.toggle("navigation-open");
+}

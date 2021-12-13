@@ -14,29 +14,36 @@
           <link rel="apple-touch-icon" href="NEEEDS INPUT">
           <link rel="stylesheet" href="index.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src="all.js"></script>
+          
           <link rel="stylesheet" href="global.css">
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5443028626546281"
      crossorigin="anonymous"></script>
+     <script src="all.js"></script>
           <script>
             function scale() {
               document.getElementById("newpage").style.opacity = "1";
             }
 
-            function out() {
+            function Out() {
         document.getElementById("dialouge-out").style.display = "none";
         document.getElementById("outbutton").style.display = "none";
       }
+
+      const cardbg = document.querySelector('.cardbg');
             </script>
         </head>     
         <body>
 
+          <nav>
+            <span class="material-icons-outlined-1">menu</span>
+          </nav>
+
 
           <div id="loader" class="loader lato"><span>Loading...</span></div>
           <div class="dialouge lato" id="dialouge-out">
-            <button class="dialouge-out lato" id="outbutton" onclick="out()">Skip</button>
-            <span class="montserrat">Please turn on your audio and close all tabs before viewing.</span>
-            <div class="delay1 montserrat">This website is best viewed on Google Chrome, with a device that has more than 8GB of RAM.</div>
+            <button class="dialouge-out lato" id="outbutton" onclick="Out()">Skip</button>
+            <span class="montserrat">Please turn on your audio.</span>
+            <div class="delay1 montserrat">In collaboration with Kauai Forest Bird Recovery Project</div>
           </div>
 
 
@@ -54,7 +61,7 @@ Your browser does not support the video tag.
     </video>
           <div id="newpage"></div>
           <div class="wrapper">
-           
+            
     <span class="montserrat heading">Immerse Yourself in the Interactive Experience</span>
               <br>
               <br>
