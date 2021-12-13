@@ -96,7 +96,7 @@ transition: 0.5s;
   nav {
     width: 50px;
     height: 50px;
-    border-radius: 100%;
+    border-radius: 100px;
     transition: 0.8s ease;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
@@ -197,8 +197,34 @@ transition: 0.5s;
   transition: 0.5s ease;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(10px);
+  cursor: default;
 }
 .navigation-open .material-icons-outlined-1 {
   opacity: 0;
   transition: 0.2s;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.navigation-open .menu {
+  opacity: 1;
+  transition: 0.8s;
+  transition-delay: 1s;
+}
+
+.item {
+  font-size: 100px;
+  font-weight: 900px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  cursor:pointer;
 }

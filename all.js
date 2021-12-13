@@ -31,6 +31,7 @@ window.onload = function(){
 
     setTimeout(function(){
         document.getElementById("browsersensor").style.opacity = "1";
+        document.getElementById('menu').innerHTML = '<span class="item lato">Home</span><span class="item lato">Home</span>';
     },2700); 
     
 };
@@ -41,3 +42,6 @@ function navigation() {
     var element = document.getElementById("navigation");
   element.classList.toggle("navigation-open");
 }
+
+
+document.getElementById('md').innerHTML = 'fdfdfdfdfdfddbfgbggufguhifguihhiuguufguihfguihfguhidgiuuhifgubhifuhibfuhfhiufuguhifg';
