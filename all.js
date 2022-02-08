@@ -1,5 +1,3 @@
-const cardbg = document.querySelector('.cardbg');
-
 window.onload = function(){
         document.getElementById("browsersensor").style.display = "block";       
         document.getElementById("loader").style.opacity = "0";     
