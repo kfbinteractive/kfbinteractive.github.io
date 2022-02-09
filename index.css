@@ -247,3 +247,7 @@ z-index: 100;
     border: 2px solid black;
 }
 
+.creditslink {
+    font-size: 1.2rem; 
+    font-weight: 500;
+}
