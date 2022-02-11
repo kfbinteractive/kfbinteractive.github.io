@@ -1,0 +1,129 @@
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extinct Kauai Native Birds</title>
+    <meta name="description" content="An interactive adventure with sounds, descriptions, and pictures of all of the birds.">
+    <meta name="author" content="Simon & KFBRP">
+    <meta property="og:title" content="Kauai Native Birds Interactive">
+    <meta name="og:title" property="og:title" content="Kauai Native Birds Interactive">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="kauaibirds.info">
+    <meta property="og:description" content="See the natives birds and listen to the sounds of the forest.">
+
+
+    <link rel="icon" href="Images/favicon.png">
+    <link rel="icon" href="Images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="Images/favicon.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="ghosts.css">
+
+<script src="all.js"></script>
+    
+  </head>     
+  <body>
+
+
+    <div id="loader" class="loader lato"><span>Loading...</span></div>
+    <div class="dialouge lato" id="dialouge-out">
+      <button class="dialouge-out lato" id="outbutton" onclick="Out()">Skip</button>
+      <span class="montserrat">No going back...</span>
+      <div class="delay1 montserrat">These birds are forever lost, driven to extinction because of changing climate or global warming. See what we have left of them here.</div>
+    </div>
+
+
+
+
+
+
+    <main>
+
+<header class="birds">
+<div class="browsersensor" id="browsersensor">   
+<div class="background"></div>
+
+    <div id="newpage"></div>
+    <div class="wrapper">
+      
+<span class="montserrat heading">Extinct Native Kauai Birds</span>
+        <br>
+        <br>
+<span class="lato subheading">Here you can find descriptions, pictures, and audios of all Deceased Forest Birds.</span>
+<br>
+<br>
+<span class="lato creditslink"><a href="/credits.html"><u>Credits & Legal</u></span>
+</div>
+
+<div class="left cards" id="left">
+<div class="center">
+<a href="/birds/akekee.html">
+<div class="card" onclick="scale()">
+<img class="cardbg bg01" loading="lazy" src="Images/Ghosts/Kamao.png"></img>
+<span class="cardtext lato">Kamao</span>
+</div>
+</a>
+
+<a href="/birds/akikiki.html">
+<div class="card" onclick="scale()">
+<img class="cardbg bg02"  loading="lazy" src="Images/Ghosts/KauaiAkialoa.png"></img>
+<span class="cardtext lato">Kaua`i Akialoa</span>
+</div>
+</a>
+</div>
+</div>
+
+<div class="right cards" id="right"><div class="center">
+
+<li>
+<a href="/birds/apapane.html">
+<div class="card" onclick="scale()">
+<img class="cardbg bg03" loading="lazy" src="Images/Ghosts/KauaiNukupuu.png"></img>
+<span class="cardtext lato">Kauai Nukupuu</span>
+</div>
+</a>
+</li>
+
+<li>
+<a href="/birds/anianiau.html">
+<div class="card" onclick="scale()">
+<img class="cardbg bg04" loading="lazy" src="Images/Ghosts/KauaiOO.png"></img>
+<span class="cardtext lato">Kauai O`O</span>
+</div>
+</a>
+</li>
+
+
+      </div>
+
+
+    </div>
+    </div>
+
+</header>
+
+
+  </main>
+
+
+
+
+
+  <div class="toosmall lato"><span>Please view this on a larger browser.</span></div>
+  
+
+  <script>
+    function scale() {
+      document.getElementById("newpage").style.opacity = "1";
+    }
+
+    function Out() {
+document.getElementById("dialouge-out").style.display = "none";
+document.getElementById("outbutton").style.display = "none";
+}
+    </script>
+
+</div>
+  </body>
+</html>
