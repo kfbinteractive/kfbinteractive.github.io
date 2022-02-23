@@ -267,6 +267,8 @@ body, html {
        font-weight: 500;
    }
 
+
+   /*
    @media only screen and (max-width: 800px) {
     main {
       display: block;
@@ -283,3 +285,4 @@ body, html {
   .right {top: 10px; position: relative;}
   .cards {display: table; width: 99vw; float: left;}
 }
+*/
