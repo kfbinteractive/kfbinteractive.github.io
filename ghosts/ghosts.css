@@ -1,3 +1,29 @@
+@media only screen and (max-width: 800px) {
+  main {
+    display: block;
+  }
+  .toosmall {display: none;}
+
+.background {
+  z-index: -1;
+  opacity: 1;
+  display: block;
+}
+.toosmall span {display: none;}
+}
+@media only screen and (max-height: 100px) {
+  main {
+    display: none;
+  }
+
+  .background {
+    z-index: -2;
+  }
+  .toosmall {display: block;}
+
+  .toosmall span {display: block;}
+}
+
 /* Scrollbar */
 
 /* width */
@@ -53,94 +79,70 @@ main {
     transform: translate(-50%,-50%);
     position: absolute;
     z-index: 999;
-    overflow: hidden;
-
 }
 
-.image {
-    width: 170px;
-    margin: 0 auto;
-    border-radius: 100%;
-    height: 170px;
-    padding: 20px 0px;
-    position: relative;
-    object-fit: cover;
-    -o-object-fit: cover;
-    transition: 0.5s;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-.image:hover {
-    transition: 0.5s;
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-  width: 300px;
-  height: 300px;
-  cursor: pointer;
-}
-
-
-.bird-define {
+.griditems {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(50px);
+  -webkit-backdro-filter: blur(50px);
   width: 100%;
-  height: 200px;
-  padding: 20px 0px;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
   position: relative;
-  transition: 0.5s;
-  text-align: center; 
-  text-transform: lowercase;
-  color: white;
-
+  float: left;
+  margin: 10px;
 }
 
-.bird-name {
-  font-size: 40px;
-  font-weight: 800;
+.infogrid {
+ width: 60%;
+ overflow: scroll;
 }
 
-.science-name {
-  font-size: 30px;
-  font-style: italic;
-}
-
-.back {
-  font-size: 24px;
-  font-weight: 300;
-  margin: 5px 0px;
-  width: 100px;
+.namegrid {
+  width: 30%;
 }
 
 .center {
-  top: 50%;
   left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(0%,-50%);
 }
 
-.sides {
-  width: 30%;
-  height: 100%;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.1);
+.padding {
+ position: absolute;
+ width: 90%;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.birdname {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0px 0px 1px 0px;
+}
+
+.sciencename {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+.birdpicture {
+  width: 100%;
+  height: auto;
+  position: relative;
+  object-fit: cover;
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-}
-
-.right {
-  right: 0px;
-}
-
-.left {
-  left: 0px;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
   transition: 0.5s;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
-.text {
-  height: 90%;
-  width: 90%;
-  padding: 10px 0px 0px 20px;
+.birdpicture:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: 0.5s;
 }
