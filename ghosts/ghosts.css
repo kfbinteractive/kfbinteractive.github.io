@@ -5,7 +5,7 @@
   .toosmall {display: none;}
 
 .background {
-  z-index: -1;
+  z-index: unset;
   opacity: 1;
   display: block;
 }
@@ -92,15 +92,18 @@ main {
   position: relative;
   float: left;
   margin: 10px;
+  overflow: hidden;
 }
 
 .infogrid {
  width: 60%;
  overflow: scroll;
+ transition: 0.5s;
 }
 
 .namegrid {
   width: 30%;
+  transition: 0.5s;
 }
 
 .center {
@@ -114,6 +117,10 @@ main {
  left: 50%;
  top: 50%;
  transform: translate(-50%, -50%);
+}
+
+.infoheight {
+  height: 90%;
 }
 
 .birdname {
@@ -145,4 +152,30 @@ main {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 700px) {
+  .infogrid {
+    width: 40%;
+    transition: 0.5s;
+    font-size: 11px;
+   }
+   
+   .namegrid {
+     width: 40%;
+     transition: 0.5s;
+   }
+   .birdname {
+     font-size: 14px;
+   }
+   .sciencename {
+     font-size: 12px;
+   }
+   .birdpicture {
+     width: 90%;
+     margin: 0 auto;
+     position: relative;
+     left: 50%;
+     transform: translatex(-50%);
+   }
 }
