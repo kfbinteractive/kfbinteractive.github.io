@@ -27,7 +27,7 @@ body, html {
        top: 50%;
        left: 50%;
        transform: translate(-50%,-50%);
-       width: 400px;
+       width: 450px;
        text-align: center;
        transition: 0.5s;
    }
@@ -39,6 +39,8 @@ body, html {
    .right {right: 10px;}
    
    .left {left: 10px;}
+
+   .bottom {bottom: 10px;}
    
    .cards {
        height: 640px;
@@ -157,6 +159,20 @@ body, html {
     height: 220px;
 }
 
+.bg09 {-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%); opacity: 0.5;
+    background: transparent;}
+
+.card:hover .bg09 {width: 160px; height: 160px;}
+
+.card:hover .bg09 {-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%); 
+    
+}
+
+.bg10 {
+    background: white;
+}
 
    #newpage {
        height: 100vh;
