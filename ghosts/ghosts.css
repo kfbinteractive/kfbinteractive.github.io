@@ -1,8 +1,9 @@
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   main {
     display: block;
   }
   .toosmall {display: none;}
+*/
 
 .background {
   z-index: unset;
@@ -10,7 +11,7 @@
   display: block;
 }
 .toosmall span {display: none;}
-}
+
 @media only screen and (max-height: 100px) {
   main {
     display: none;

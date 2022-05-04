@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function() {
         document.getElementById("browsersensor").style.display = "block";       
         document.getElementById("loader").style.opacity = "0";     
     document.getElementById("browsersensor").style.display = "block";
